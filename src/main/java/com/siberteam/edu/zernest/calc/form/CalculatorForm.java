@@ -3,10 +3,10 @@ package com.siberteam.edu.zernest.calc.form;
 import org.apache.struts.validator.ValidatorForm;
 
 public class CalculatorForm extends ValidatorForm {
-    String x = "0";
-    String y = "0";
-    String operation="+";
-    int result;
+    private String x = "0";
+    private String y = "0";
+    private String operation="+";
+    private int result;
 
     public String getX() {
         return x;
