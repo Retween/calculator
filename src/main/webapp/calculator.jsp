@@ -14,13 +14,13 @@
 <html:form action="/calculator.do">
     <p>
         <bean:message key="label.x"/>
-        <html:text property="x"/>
-        <html:errors property="x"/>
+        <html:text property="x" onkeyup="this.value=this.value.replace(/[^\d.]/g,'')"/>
+        <span style="color: red"><html:errors property="x"/></span>
     </p>
     <p>
         <bean:message key="label.y"/>
-        <html:text property="y"/>
-        <html:errors property="y"/>
+        <html:text property="y" onkeyup="this.value=this.value.replace(/[^\d.]/g,'')"/>
+        <span style="color: red"><html:errors property="y"/></span>
     </p>
     <p>
         Option:

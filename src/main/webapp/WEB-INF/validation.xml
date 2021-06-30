@@ -14,13 +14,13 @@
                 <arg key="label.y"/>
                 <msg name="required" key="errors.required"/>
             </field>
-            <field property="x" depends="integer">
+            <field property="x" depends="double">
                 <arg key="label.x"/>
-                <msg name="integer" key="errors.integer"/>
+                <msg name="double" key="errors.double"/>
             </field>
-            <field property="y" depends="integer">
+            <field property="y" depends="double">
                 <arg key="label.y"/>
-                <msg name="integer" key="errors.integer"/>
+                <msg name="double" key="errors.double"/>
             </field>
         </form>
     </formset>

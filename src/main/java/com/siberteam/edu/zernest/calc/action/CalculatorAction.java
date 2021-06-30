@@ -16,16 +16,16 @@ public class CalculatorAction extends DispatchAction {
         CalculatorForm form1 = (CalculatorForm) form;
         switch (form1.getOperation()) {
             case "+":
-                form1.setResult(Integer.parseInt(form1.getX()) + Integer.parseInt(form1.getY()));
+                form1.setResult(Double.parseDouble(form1.getX()) + Double.parseDouble(form1.getY()));
                 break;
             case "-":
-                form1.setResult(Integer.parseInt(form1.getX()) - Integer.parseInt(form1.getY()));
+                form1.setResult(Double.parseDouble(form1.getX()) - Double.parseDouble(form1.getY()));
                 break;
             case "/":
-                form1.setResult(Integer.parseInt(form1.getX()) / Integer.parseInt(form1.getY()));
+                form1.setResult(Double.parseDouble(form1.getX()) / Double.parseDouble(form1.getY()));
                 break;
             case "*":
-                form1.setResult(Integer.parseInt(form1.getX()) * Integer.parseInt(form1.getY()));
+                form1.setResult(Double.parseDouble(form1.getX()) * Double.parseDouble(form1.getY()));
                 break;
         }
         return mapping.findForward("input");

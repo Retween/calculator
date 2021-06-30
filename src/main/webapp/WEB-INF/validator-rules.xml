@@ -15,15 +15,28 @@
                        javax.servlet.http.HttpServletRequest"
                    depends="" msg="errors.required"/>
 
-        <validator name="integer"
+        <validator name="double"
                    classname="org.apache.struts.validator.FieldChecks"
-                   method="validateInteger"
+                   method="validateDouble"
                    methodParams="java.lang.Object,
                        org.apache.commons.validator.ValidatorAction,
                        org.apache.commons.validator.Field,
                        org.apache.struts.action.ActionMessages,
                        org.apache.commons.validator.Validator,
                        javax.servlet.http.HttpServletRequest"
-                   depends="" msg="errors.integer"/>
+                   depends=""
+                   msg="errors.double"/>
+
+        <validator name="mask"
+                   classname="org.apache.struts.validator.FieldChecks"
+                   method="validateMask"
+                   methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionMessages,
+                       org.apache.commons.validator.Validator,
+                       javax.servlet.http.HttpServletRequest"
+                   depends=""
+                   msg="errors.invalid"/>
     </global>
 </form-validation>
