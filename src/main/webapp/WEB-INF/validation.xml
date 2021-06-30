@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE form-validation PUBLIC
+        "-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.3.0//EN"
+        "http://jakarta.apache.org/commons/dtds/validator_1_3_0.dtd">
+<form-validation>
+    <formset>
+        <form name="calculatorForm">
+            <field property="x" depends="required">
+                <arg key="label.x"/>
+                <msg name="required" key="errors.required"/>
+            </field>
+            <field property="y" depends="required">
+                <arg key="label.y"/>
+                <msg name="required" key="errors.required"/>
+            </field>
+            <field property="x" depends="integer">
+                <arg key="label.x"/>
+                <msg name="integer" key="errors.integer"/>
+            </field>
+            <field property="y" depends="integer">
+                <arg key="label.y"/>
+                <msg name="integer" key="errors.integer"/>
+            </field>
+        </form>
+    </formset>
+</form-validation>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+        "http://jakarta.apache.org/struts/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+    <form-beans>
+        <form-bean name="calculatorForm" type="com.siberteam.edu.zernest.calc.form.CalculatorForm"/>
+    </form-beans>
+
+    <global-forwards>
+        <forward name="calculator" path="/calculator.do" redirect="true"/>
+    </global-forwards>
+
+    <action-mappings>
+        <action path="/calculator" type="com.siberteam.edu.zernest.calc.action.CalculatorAction"
+                name="calculatorForm" input="/calculator.jsp"  >
+            <forward name="input" path="/calculator.jsp"/>
+        </action>
+    </action-mappings>
+
+    <message-resources parameter="ApplicationResources"/>
+
+    <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+        <set-property property="pathnames"
+                      value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml" />
+    </plug-in>
+</struts-config>
