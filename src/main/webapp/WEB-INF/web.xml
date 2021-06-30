@@ -3,7 +3,7 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
-	<display-name>Maven Struts Examples</display-name>
+	<display-name>Maven Struts</display-name>
 
 	<servlet>
 		<servlet-name>action</servlet-name>

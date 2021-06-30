@@ -15,7 +15,6 @@
     <p>
         <bean:message key="label.x"/>
         <html:text property="x"/>
-
         <html:errors property="x"/>
     </p>
     <p>
