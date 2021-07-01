@@ -2,7 +2,7 @@
 <%@ taglib uri="http://struts.apache.org/tags-logic" prefix="logic" %>
 <%@ taglib uri="http://struts.apache.org/tags-bean" prefix="bean" %>
 <!doctype html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -26,11 +26,11 @@
     </p>
     <p>
         Option: <html:select property="operation">
-            <html:option value="+">Add</html:option>
-            <html:option value="-">Subtract</html:option>
-            <html:option value="*">Multiply</html:option>
-            <html:option value="/">Divide</html:option>
-        </html:select>
+        <html:option value="+"><bean:message key="label.add"/> </html:option>
+        <html:option value="-"><bean:message key="label.subtract"/> </html:option>
+        <html:option value="*"><bean:message key="label.multiply"/> </html:option>
+        <html:option value="/"><bean:message key="label.divide"/> </html:option>
+    </html:select>
     </p>
     <html:submit value="Calculate"/>
     <p>
