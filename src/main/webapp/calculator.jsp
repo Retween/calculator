@@ -15,7 +15,7 @@
     <p>
         <input type="number" name="x" step="0.01"
                value="<bean:write name="calculatorForm" property="x"/>"
-        placeholder="<bean:message key="label.x"/>">
+               placeholder="<bean:message key="label.x"/>">
         <span style="color: red"><html:errors property="x"/></span>
     </p>
     <p>
@@ -25,12 +25,12 @@
         <span style="color: red"><html:errors property="y"/></span>
     </p>
     <p>
-        Option:
         <html:select property="operation">
-            <html:option value="+"/>
-            <html:option value="-"/>
-            <html:option value="*"/>
-            <html:option value="/"/>
+            <option selected disabled>choose option</option>
+            <html:option value="+">add</html:option>
+            <html:option value="-">subtract</html:option>
+            <html:option value="*">multiply</html:option>
+            <html:option value="/">divide</html:option>
         </html:select>
     </p>
     <html:submit value="calculate"/>
