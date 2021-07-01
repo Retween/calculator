@@ -13,13 +13,15 @@
 <body>
 <html:form action="/calculator.do">
     <p>
-        <bean:message key="label.x"/>
-        <html:text property="x" onkeyup="this.value=this.value.replace(/[^\d.]/g,'')"/>
+        <input type="number" name="x" step="0.01"
+               value="<bean:write name="calculatorForm" property="x"/>"
+        placeholder="<bean:message key="label.x"/>">
         <span style="color: red"><html:errors property="x"/></span>
     </p>
     <p>
-        <bean:message key="label.y"/>
-        <html:text property="y" onkeyup="this.value=this.value.replace(/[^\d.]/g,'')"/>
+        <input type="number" name="y" step="0.01"
+               value="<bean:write name="calculatorForm" property="y"/>"
+               placeholder="<bean:message key="label.y"/>">
         <span style="color: red"><html:errors property="y"/></span>
     </p>
     <p>

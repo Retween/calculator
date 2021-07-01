@@ -3,9 +3,9 @@ package com.siberteam.edu.zernest.calc.form;
 import org.apache.struts.validator.ValidatorForm;
 
 public class CalculatorForm extends ValidatorForm {
-    private String x = "0";
-    private String y = "0";
-    private String operation = "+";
+    private String x;
+    private String y;
+    private String operation;
     private Double result;
 
     public String getX() {

@@ -12,6 +12,7 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <build>
@@ -22,6 +23,7 @@
                 <version>3.3.1</version>
             </plugin>
         </plugins>
+        <finalName>struts-calculator</finalName>
     </build>
 
     <dependencies>
