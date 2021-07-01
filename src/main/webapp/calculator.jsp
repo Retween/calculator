@@ -25,15 +25,14 @@
         <span style="color: red"><html:errors property="y"/></span>
     </p>
     <p>
-        <html:select property="operation">
-            <option selected disabled>choose option</option>
-            <html:option value="+">add</html:option>
-            <html:option value="-">subtract</html:option>
-            <html:option value="*">multiply</html:option>
-            <html:option value="/">divide</html:option>
+        Option: <html:select property="operation">
+            <html:option value="+">Add</html:option>
+            <html:option value="-">Subtract</html:option>
+            <html:option value="*">Multiply</html:option>
+            <html:option value="/">Divide</html:option>
         </html:select>
     </p>
-    <html:submit value="calculate"/>
+    <html:submit value="Calculate"/>
     <p>
         Result: <bean:write name="calculatorForm" property="result"/>
     </p>
